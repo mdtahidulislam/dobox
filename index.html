@@ -27,7 +27,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!--<![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BOOKSTORE responsive email template</title>
+	<title>Email - NPS Survey</title>
 	<style type="text/css">
 		div, p, a, li, td { 
 			-webkit-text-size-adjust:none; 
@@ -67,7 +67,7 @@
 		}
 		.outer {
 			margin: 0 auto;
-			width: 60%;
+			width: 100%;
 			max-width: 600px;
 			/*-webkit-box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: inset 0px -1px 5px 0px rgba(0,0,0,0.75);
@@ -183,7 +183,24 @@ td.text p a {
 			text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 			text-align:center;
 		}
+		.mobile-heading {
+				display: none;
+		}
+		.mobile-text {
+			max-width: 342px;
+		}
 		@media (max-width: 425px) {
+			.mobile-text {
+			    max-width: 295px;
+			}
+			.mobile-heading {
+				display: block;
+			}
+			.desktop-heading {
+				display: none;
+			}
+		}
+		/*@media (max-width: 425px) {
 			.outer {
 			    width: 85%;
 			}
@@ -197,7 +214,7 @@ td.text p a {
 				padding-left: 0 !important;
 				padding-right: 0 !important;
 			}
-		}
+		}*/
 	</style>
 
 	<!--[if (gte mso 9)|(IE)]>
@@ -209,7 +226,7 @@ td.text p a {
 </head>
 <body style="margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff;">
 	<center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
-		<div class="webkit" style="max-width:600px; background-color: #fff; box-shadow: 0px 0px 25px 15px #f6f6f6; border-radius: 15px;">
+		<div class="webkit" style="max-width:600px;">
 
 			<!--[if (gte mso 9)|(IE)]>
 				<table width="600" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;">
@@ -217,13 +234,13 @@ td.text p a {
 				<td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 			<![endif]-->
 
-			<table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#ffffff;">
+			<table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#ffffff;background-color: #fff; box-shadow: 0px 0px 25px 15px #f6f6f6; border-radius: 15px;">
 				<tr>
 					<td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
 						<table width="100%" style="border-spacing:0;font-family:sans-serif;color:#ffffff;">
 							<tr>
 								<td class="inner contents" width="600" height="50" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;text-align:center;">
-									<p style="font-size:24px; color:#ffffff; font-family:arial, sans-serif; Margin-bottom:0px;">
+									<p style="font-size:24px; color:#ffffff; font-family:arial, sans-serif; margin-bottom:0px;">
 										<a href="https://www.example.com" valign="middle" style="text-decoration:none; font-family:arial, sans-serif; color:#ffffff; font-weight:bold;"><img src="img/logo.JPG" alt="">
 										</a>
 									</p>
@@ -231,12 +248,13 @@ td.text p a {
 							</tr>
 							<tr>
 								<td class="inner contents" width="600" height="50" style="padding-top:20px;padding-bottom:20px;padding-right:25px;padding-left:25px;text-align:center;">
-									<p style="font-size:18px; color:#000; font-family:arial, sans-serif; margin-bottom:0px; font-weight: 700;">A quick question about your recent visit to Do Box</p>
+									<p class="desktop-heading" style="max-width: 342px; margin: 0 auto; font-size:18px; color:#000; font-family:arial, sans-serif; margin-bottom:0px; font-weight: 700;">A quick question about your recent visit to Yonder HQ</p>
+									<p class="mobile-heading" style="max-width: 342px; margin: 0 auto; font-size:18px; color:#000; font-family:arial, sans-serif; margin-bottom:0px; font-weight: 700;">A quick question about your recent visit to Do Box</p>
 								</td>
 							</tr>
 							<tr>
 								<td class="inner contents" width="600" height="50" style="padding-top:20px;padding-bottom:20px;padding-right:25px;padding-left:25px;text-align:center;">
-									<p style="font-size:25px; color:#000; font-family:arial, sans-serif; margin-bottom:0px; margin-top: 0px;"><span style="display:block;">How likely is it that you will</span> recommend us to your family and friends?</p>
+									<p class="mobile-text" style="max-width: 342px; margin: 0 auto;font-size:25px; color:#000; font-family:arial, sans-serif; margin-bottom:0px; margin-top: 0px;">How likely is it that you will recommend us to your family and friends?</p>
 								</td>
 							</tr>
 							<tr>
@@ -307,6 +325,19 @@ td.text p a {
 											</tr>
 										</table>
 									</div>
+									<!--[if (gte mso 9)|(IE)]>
+										</td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+									<![endif]-->
+								</td>
+							</tr>
+							<tr>
+								<td class="multi-column" style="padding-top:0;padding-bottom:0;padding-right:20px;padding-left:20px;text-align:center;font-size:0;">
+									
+									<!--[if (gte mso 9)|(IE)]>
+										<table width="100%" style="border-spacing:0;font-family: Calibri, sans-serif;color:#333333;">
+										<tr>
+										<td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;">
+									<![endif]-->
 
 									<div class="column" style="width:100%;max-width:40px;display:inline-block;vertical-align:top;">
 										<table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
